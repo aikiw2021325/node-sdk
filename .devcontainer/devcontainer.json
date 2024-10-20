@@ -1,0 +1,17 @@
+{
+    "name": "node-sdk",
+    "dockerComposeFile": "./compose.yaml",
+    "service": "node-sdk",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Vue.volar",
+                "bradlc.vscode-tailwindcss"
+            ],
+            "settings": {
+                "http.proxyStrictSSL": false
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+services:
+  node-sdk:
+    # image: vue-js_devcontainer-vue-sdk-volume
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node-sdk
+    working_dir: /workspace/
+    volumes:
+      - ../workspace:/workspace
+    tty: true
+    environment:
+      - NODE_ENV=development
